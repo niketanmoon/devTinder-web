@@ -36,3 +36,5 @@ npm create vite@latest devTinder-web -- --template react
 - After refresh, the store should persist
 - Logout
 - Profile
+
+- Build the user card on feed
