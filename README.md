@@ -34,4 +34,5 @@ npm create vite@latest devTinder-web -- --template react
 - Subscribe to the store using useSelector
 
 - After refresh, the store should persist
-
+- Logout
+- Profile

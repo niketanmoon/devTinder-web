@@ -3,11 +3,14 @@ import NavBar from "./NavBar";
 import Footer from "./Footer";
 import { useDispatch, useSelector } from "react-redux";
 import { addUser } from "../redux/userSlice";
+import { useEffect } from "react";
+import axios from "axios";
+import { BASE_URL } from "../utils/constants";
 
 const Body = () => {
   const dispatch = useDispatch();
   const navigate = useNavigate();
-  const userData = useSelector(store => store.user)
+  const userData = useSelector((store) => store.user);
 
   const fetchUser = async () => {
     if (userData) return;
