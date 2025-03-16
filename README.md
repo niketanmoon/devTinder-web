@@ -37,4 +37,5 @@ npm create vite@latest devTinder-web -- --template react
 - Logout
 - Profile
 
+- get the feed and add the feed to the store
 - Build the user card on feed
