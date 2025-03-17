@@ -43,3 +43,4 @@ npm create vite@latest devTinder-web -- --template react
 - Build a feature to see all the connections
 
 - Add connection requests page
+- Added accept and reject logic for requests page

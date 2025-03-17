@@ -7,8 +7,12 @@ import { Link } from "react-router";
 import { addConnections } from "../redux/connectionSlice";
 
 const Connections = () => {
-  const connections = useSelector((store) => store.connections);
+  const connections = useSelector((store) => store.connection);
   const dispatch = useDispatch();
+  useEffect(() => {
+    fetchConnections();
+  }, []);
+
   const fetchConnections = async () => {
     try {
       const res = await axios.get(BASE_URL + "/user/connections", {
@@ -21,11 +25,9 @@ const Connections = () => {
     }
   };
 
-  useEffect(() => {
-    fetchConnections();
-  }, []);
   if (!connections) return;
-  if (connections.length === 0) return <h1> No Connections Found</h1>;
+  if (connections.length === 0)
+    return <h1 className="flex justify-center my-10"> No Connections Found</h1>;
 
   return (
     <div className="text-center my-10">
