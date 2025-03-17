@@ -129,6 +129,7 @@ const EditProfile = ({ user }) => {
         </div>
         <UserCard
           user={{ firstName, lastName, photoUrl, age, gender, about }}
+          showChoices={false}
         />
       </div>
       {showToast && (

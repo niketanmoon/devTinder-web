@@ -39,3 +39,5 @@ npm create vite@latest devTinder-web -- --template react
 
 - get the feed and add the feed to the store
 - Build the user card on feed
+- show toast message on save
+- Build a feature to see all the connections
